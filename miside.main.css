@@ -1,0 +1,94 @@
+/**
+ * @name MiSide - s
+ * @author s
+ * @description s
+ * @version 1.2.0
+ * @authorId 4321
+*/
+
+.theme-dark {
+    --miside-background: url("https://imgur.com/a/ztCoN2e");
+    --miside-main-background: rgba(24, 17, 31, 1);
+    --miside-secondary-background: rgba(38, 26, 48, 1);
+    --miside-base-opacity: 0.5;
+
+    --interactive-muted: transparent;
+    --background-accent: transparent;
+    --background-secondary-alt: transparent;
+    --scrollbar-auto-thumb: transparent;
+    --scrollbar-auto-track: transparent;
+    --modal-background: transparent;
+    --modal-footer-background: transparent;
+    --bg-base-primary: transparent;
+    
+    --bg-base-secondary: var(--miside-main-background);
+    --background-primary: var(--miside-main-background);
+    --modal-background: var(--miside-main-background);
+    --channeltextarea-background: var(--miside-main-background);
+    --background-floating: var(--miside-main-background);
+    --bg-surface-overlay: var(--miside-main-background);
+    --background-nested-floating: var(--miside-main-background);
+    --background-tertiary: var(--miside-main-background);
+    --bg-overlay-2: var(--miside-main-background);
+    
+    --button-secondary-background: rgb(39, 34, 51);
+    --button-secondary-background-hover: rgb(53, 46, 70) !important;
+    
+    --deprecated-card-bg: var(--miside-secondary-background);
+    --background-modifier-hover: var(--miside-secondary-background);
+    --background-modifier-active: var(--miside-secondary-background);
+    --background-secondary: var(--miside-secondary-background);
+    --background-modifier-selected: var(--miside-secondary-background);
+    --button-secondary-background-hover: var(--miside-secondary-background);
+    --card-primary-bg: var(--miside-secondary-background);
+    --bg-mod-faint: var(--miside-secondary-background);
+    --input-background: var(--miside-secondary-background);
+    --bg-surface-raised: var(--miside-secondary-background);
+    
+    body {
+        background: var(--miside-background); background-repeat: no-repeat; background-size: cover; background-position: center; backdrop-filter: brightness(0.5);
+    }
+    body:has(.fixClipping_c7e9c6) .app_a01fb1 { display: none; }
+    body:has(.layer_d4b6c5[aria-hidden=true]) { backdrop-filter: brightness(0.5) blur(8px); margin-left: 0; }
+
+    body:has(.backdrop_e4f2ae) { --miside-base-opacity: 1 }
+    
+    .appMount_ea7e65, .unread_d8bfb3, .chatContent_a7d72e, .chat_a7d72e, .sidebar_a4d4d9, .standardSidebarView_c25c6d, .layer_d4b6c5, .contentRegion_c25c6d, .members_cbd271, .container_cbd271, .container_ee69e0, .privateChannels_f0963d, .scroller_c47fa9, .channelTextArea_a7d72e, .children_fc4f04:after, .customScroller_c25c6d, .wrapper_cdfd51, .wrapper_b75bb9, .container_c2739c, .scrollerBase_c49869, .fixClipping_c7e9c6, .app_a01fb1, .bg_d4b6c5, .wrapper_fea3ef, .footer_d71945, .header_bd05f1, .titleContainer_e87574
+    { background: transparent !important; }
+    
+    .member_a31c43, .searchBar_f0963d, .container_b2ca13, .inner_c69a7b, .selected_f5eb4bm, .item_eb92a8:hover, .jumpToPresentBar_cf58b5, .sectionDivider_c43953, .guildSeparator_d0c57e, .container_e88961, .stackedBars_bdf0de, .replyBar_b11c5e, .itemFilled_eb92a8 { background: var(--background-primary) !important; }
+    
+    .member_a31c43:hover>div, .formNotice_aae945, .vc-settings-card, .vc-settings-quickActions-card, .popout_f6639d, .wrapper_a71a1c, .container_c18ec9, .searchBar_a46bef, .searchBarComponent_f0963d, .selectorButton_a78967, .card_f30ffem, .vc-addon-card, .vc-settings-quickActions-pill, .item_eb92a8[aria-checked=true], .statusBubble_af9888, .statusBubbleOuter_af9888:before, .statusBubbleOuter_af9888:after { background: var(--card-primary-bg) !important; }
+
+    .scroller_e2e187::-webkit-scrollbar-track, .scrollerBase_c49869::-webkit-scrollbar-track, .scrollerBase_eed6a8::-webkit-scrollbar-track { background-color: rgba(0, 0, 0, 0) !important; }
+    .scroller_e2e187::-webkit-scrollbar-thumb, .scroller_c43953::-webkit-scrollbar-thumb, .scrollerBase_c49869::-webkit-scrollbar-thumb, .scrollerBase_c49869::-webkit-scrollbar-thumb, .scrollerBase_eed6a8::-webkit-scrollbar-thumb { background-color: var(--miside-main-background) }
+
+    .title_a7d72e, .container_fd6364, .scrollableContainer_bdf0de, .button_df39bd, .container_b2ca13, .member_a31c43 { background: rgba(24, 17, 31, var(--miside-base-opacity)) !important; transition: background .5s; }
+    
+    .member_a31c43.offline_a31c43 { opacity: 1; background: rgba(19, 13, 26, var(--miside-base-opacity)) !important; transition: background 1s; }
+    .container_cebd1c:not(.checked_cebd1c) { background: var(--background-secondary) !important; }
+    .panel_bf1a22 { border-bottom: none;  background: var(--background-primary); border-radius: 0.5rem; margin-bottom: 8px; }
+    .slider_cebd1c>rect { fill: white; }; .slider_cebd1c>svg>path { fill: black; }
+    .imageLoading_b000dd { background: var(--background-floating) !important; border-radius: 0.8rem; }  
+    .form_a7d72e { margin-top: 0; }
+    .contentColumn_c25c6d { border-radius: 0.5rem; padding: 60px 40px 80px; margin: 20px 0; } 
+    .membersWrap_cbd271 { min-height: 100%; }
+    .typeWindows_a934d8 { margin-top: 0; }
+    .member_a31c43 { margin: 4px 0 4px 8px }
+    .sidebar_a4d4d9 { border-radius: 0 !important; }
+    .container_fd6364, .searchBar_f0963d { border-radius: 0.5rem 0 0 0.5rem; }
+    .container_b2ca13 { border-radius: 0.5rem; margin-bottom: 1.5rem; height: 44px; }
+    .loadingPopout_a8c724, .inner_c59af2, .member_a31c43 { border-radius: 0.5rem; }
+    .jumpToPresentBar_cf58b5 { border-radius: 0.25rem; margin-bottom: 4px; padding-top: 4px; }
+    .selected_f6f816>div { border-radius: 0.25rem; }
+    .container_adcaac { border-bottom: 0; padding: 8px 0; } 
+    .divider_d5deea { border-top-color: var(--miside-main-background); border-top-width: 2px; }
+    .divider_d5deea>span { border-radius: 0.25rem; padding: 2px 8px; }
+    .sidebarRegion_c25c6d { padding: 40px 0; }
+    .sidebar_c25c6d { padding-top: 0; padding-bottom: 0; } 
+    .vc-settings-card, .vc-settings-quickActions-card, .popout_f6639d, .card_a298b8 { border: none !important; } 
+    .wrapper_e74e54 { display: none; }
+
+    body:has(.messageListItem_d5deea[id|="chat-messages-1127515913021833216"]) *.placeholder_a552a6::before { content: "Praying for you 🕯️ O Great Mita 💝"; margin-right: 100vw; }
+    body:has(.messageListItem_d5deea[id|="chat-messages-1127515913021833216"]) *.placeholder_a552a6 { text-overflow: clip !important; }
+}
